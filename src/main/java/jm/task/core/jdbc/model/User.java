@@ -9,6 +9,16 @@ public class User {
     @Id
     private Long id;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     @Column
     private String name;
 
